@@ -32,7 +32,9 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
-
+  gem "bullet"
+  gem "dotenv-rails", "~> 2.1", ">= 2.1.1"
+  gem "rspec-rails", "~> 6.0.0"
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
 
@@ -40,4 +42,22 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
+group :development do
+  gem "listen", "~> 3.1", ">= 3.1.5"
+  gem "spring"
+  gem "spring-watcher-listen", "~> 2.0"
+  gem "guard-rspec", "~> 4.7", ">= 4.7.3"
+end
 
+
+group :test do
+  gem "factory_bot_rails"
+  gem "faker"
+  gem "nyan-cat-formatter"
+  gem "rspec_junit_formatter", "~> 0.6.0"
+  gem "shoulda-matchers", "~> 6.2"
+  gem "simplecov", require: false
+end
+
+# gem "tzinfo-data", "~> 1.2023", ">= 1.2023.3"
+ruby File.read("./.ruby-version")
