@@ -92,10 +92,10 @@ GEM
       reline (>= 0.3.8)
     diff-lcs (1.5.1)
     docile (1.4.1)
-    dotenv (2.8.1)
-    dotenv-rails (2.8.1)
-      dotenv (= 2.8.1)
-      railties (>= 3.2)
+    dotenv (3.1.4)
+    dotenv-rails (3.1.4)
+      dotenv (= 3.1.4)
+      railties (>= 6.1)
     drb (2.2.1)
     erubi (1.13.0)
     factory_bot (6.5.0)
@@ -315,7 +315,7 @@ DEPENDENCIES
   brakeman
   bullet
   debug
-  dotenv-rails (~> 2.1, >= 2.1.1)
+  dotenv-rails (~> 3.1)
   factory_bot_rails
   faker
   guard-rspec (~> 4.7, >= 4.7.3)
